@@ -8,12 +8,10 @@ public class LineTester {
 			
 			//Line to test here
 			
-			Excel excel = new Excel("C:\\\\Users\\\\Daniel - new\\\\Desktop\\\\Access_Creds.xlsx", "Sheet1");
+			String excelPath = "C:\\Users\\Daniel - new\\Desktop\\Poludo Institute\\Personal Github Repos 2019 onward\\Sea2Sky_LMS-CRM_Integration\\LMS-CRM-Integration\\excel\\MOCK_DATA.xlsx";
 			
-			String testUsername = excel.getStringCellData(1, 0);
-			
-			System.out.println(testUsername);
 
+			ExcelDataProvider.testData(excelPath, "data");
 			
 			
 		} catch (Exception e) {
